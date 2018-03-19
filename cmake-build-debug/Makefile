@@ -123,6 +123,33 @@ lexicographic-tree/fast:
 	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/build
 .PHONY : lexicographic-tree/fast
 
+lexicographic.o: lexicographic.cpp.o
+
+.PHONY : lexicographic.o
+
+# target to build an object file
+lexicographic.cpp.o:
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o
+.PHONY : lexicographic.cpp.o
+
+lexicographic.i: lexicographic.cpp.i
+
+.PHONY : lexicographic.i
+
+# target to preprocess a source file
+lexicographic.cpp.i:
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.i
+.PHONY : lexicographic.cpp.i
+
+lexicographic.s: lexicographic.cpp.s
+
+.PHONY : lexicographic.s
+
+# target to generate assembly for a file
+lexicographic.cpp.s:
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.s
+.PHONY : lexicographic.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lexicographic-tree"
+	@echo "... lexicographic.o"
+	@echo "... lexicographic.i"
+	@echo "... lexicographic.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

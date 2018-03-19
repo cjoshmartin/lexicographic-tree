@@ -3,4 +3,4 @@ project(lexicographic-tree)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(lexicographic-tree main.cpp)
+add_executable(lexicographic-tree main.cpp lexicographic.cpp lexicographic.h node.h)

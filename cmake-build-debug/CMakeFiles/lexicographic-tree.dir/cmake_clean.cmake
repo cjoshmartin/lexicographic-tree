@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lexicographic-tree.dir/main.cpp.o"
+  "CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o"
   "lexicographic-tree.pdb"
   "lexicographic-tree"
 )

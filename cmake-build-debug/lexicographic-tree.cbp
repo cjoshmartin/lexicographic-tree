@@ -82,7 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.cpp">
+			<Option target="lexicographic-tree"/>
+		</Unit>
+		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.h">
+			<Option target="lexicographic-tree"/>
+		</Unit>
 		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/main.cpp">
+			<Option target="lexicographic-tree"/>
+		</Unit>
+		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/node.h">
 			<Option target="lexicographic-tree"/>
 		</Unit>
 		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/CMakeLists.txt">

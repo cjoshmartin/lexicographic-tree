@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.cpp" "/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/cmake-build-debug/CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o"
   "/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/main.cpp" "/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/cmake-build-debug/CMakeFiles/lexicographic-tree.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

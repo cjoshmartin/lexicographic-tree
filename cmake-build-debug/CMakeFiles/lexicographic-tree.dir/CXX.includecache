@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.cpp
+lexicographic.h
+/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.h
+
+/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.h
+node.h
+/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/node.h
+
 /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/main.cpp
 iostream
 -
@@ -16,5 +24,11 @@ string
 sstream
 -
 algorithm
+-
+
+/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/node.h
+string
+-
+vector
 -
 
