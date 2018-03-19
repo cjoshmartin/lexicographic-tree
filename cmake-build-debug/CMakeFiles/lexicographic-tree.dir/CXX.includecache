@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/main.cpp
+iostream
+-
+stdio.h
+-
+string
+-
+sstream
+-
+algorithm
+-
+
