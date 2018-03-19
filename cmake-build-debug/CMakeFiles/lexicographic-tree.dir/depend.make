@@ -5,5 +5,7 @@ CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o: ../lexicographic.cpp
 CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o: ../lexicographic.h
 CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o: ../node.h
 
+CMakeFiles/lexicographic-tree.dir/main.cpp.o: ../lexicographic.h
 CMakeFiles/lexicographic-tree.dir/main.cpp.o: ../main.cpp
+CMakeFiles/lexicographic-tree.dir/main.cpp.o: ../node.h
 

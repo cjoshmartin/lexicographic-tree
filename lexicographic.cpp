@@ -16,7 +16,7 @@ lexicographic::~lexicographic() {
 
 }
 
-int lexicographic::size() {
+size_t lexicographic::size() {
     return this->_size;
 }
 
@@ -43,14 +43,30 @@ void lexicographic::insertNode(std::string wordInserted, int lineNumber) {
 
         if(searching!=nullptr)
         {
-            this->_head->lineNumbers.push_back(lineNumber);
+            searching->lineNumbers.push_back(lineNumber);
         }
         else
         {
-            insert(this->_head,wordInserted,lineNumber);
+            insertNode(this->_head,wordInserted,lineNumber);
             this->_size++;
         }
     }
+}
+
+void lexicographic::insertNode(node *&pNode, std::string basic_string, int i) {
+
+    if(pNode == nullptr)
+    {
+        node * newHead = new node;
+        newHead->lineNumbers.push_back(i);
+        newHead->lexicon = basic_string;
+
+        newHead->right = nullptr;
+        newHead->left = nullptr;
+        pNode = newHead;
+    }
+    else
+        insertNode(pNode->lexicon <= basic_string ? pNode->right : pNode->left, basic_string, i);
 }
 
 node *lexicographic::searchNodes(std::string word, node *searchNode) {
@@ -72,3 +88,4 @@ node *lexicographic::searchNodes(std::string word, node *searchNode) {
 
     return nullptr;
 }
+

@@ -22,14 +22,16 @@ knowledge is our destiny.
 
 #include <sstream>
 #include <algorithm>
+#include "lexicographic.h"
 
-void paser(std::string, int);
+void paser(std::string, int, lexicographic *);
 
 int main(void)
 {
     std::string inputStr;
     int lineNumber= 1;
     bool quit = false; // hold if user wants to quit
+    lexicographic * theTree = new lexicographic();
 
     std::cout<< "WELCOME\nIf you would like to exit type: `#`\n"; // always be nice to your users and say hello
 
@@ -44,13 +46,13 @@ int main(void)
             // do nothing if you receive a blank space
         }
         else
-            paser(inputStr,lineNumber++);
+            paser(inputStr,lineNumber++,theTree);
     }
 
     return 0;
 }
 
-void paser(std::string inputStr, int lineNumber)
+void paser(std::string inputStr, int lineNumber,lexicographic * theTree)
 {
     std::istringstream input(inputStr);
     std::string e;
@@ -89,5 +91,6 @@ void paser(std::string inputStr, int lineNumber)
 
         std::transform(e.begin(), e.end(), e.begin(), ::tolower);
         std::cout << "\n" << e.substr(0,split) << " "<< lineNumber <<  "\n";
+        theTree->insertNode(e.substr(0,split), lineNumber);
     }
 }

@@ -19,14 +19,16 @@ public:
     lexicographic();
     virtual ~lexicographic();
 
-    int size();
+    size_t size();
 
     void insertNode(std::string wordInserted, int lineNumber);
+    void insertNode(node *&pNode, std::string basic_string, int i);
     node * searchNodes(std::string word, node * searchNode);
 
 private:
     node * _head;
-    int _size;
+    size_t _size;
+
 };
 
 
