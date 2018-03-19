@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+string_formater.o: string_formater.cpp.o
+
+.PHONY : string_formater.o
+
+# target to build an object file
+string_formater.cpp.o:
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o
+.PHONY : string_formater.cpp.o
+
+string_formater.i: string_formater.cpp.i
+
+.PHONY : string_formater.i
+
+# target to preprocess a source file
+string_formater.cpp.i:
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/string_formater.cpp.i
+.PHONY : string_formater.cpp.i
+
+string_formater.s: string_formater.cpp.s
+
+.PHONY : string_formater.s
+
+# target to generate assembly for a file
+string_formater.cpp.s:
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/string_formater.cpp.s
+.PHONY : string_formater.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... string_formater.o"
+	@echo "... string_formater.i"
+	@echo "... string_formater.s"
 .PHONY : help
 
 

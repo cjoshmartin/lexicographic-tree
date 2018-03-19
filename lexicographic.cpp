@@ -9,6 +9,9 @@
 //
 
 #include "lexicographic.h"
+#include <stdexcept>
+#include <iostream>
+#include "string_formater.h"
 
 lexicographic::lexicographic(): _size(0), _head(nullptr) {}
 
@@ -87,5 +90,28 @@ node *lexicographic::searchNodes(std::string word, node *searchNode) {
         return __right;
 
     return nullptr;
+}
+
+void lexicographic::print(node * head) {
+    if ( head == nullptr)
+        return;
+
+    print(head->left);
+
+    std::vector<int>::iterator it;  // declare an iterator to a vector of strings
+    printf("\n%11s   ",head->lexicon.c_str());
+    for(it = head->lineNumbers.begin(); it != head->lineNumbers.end(); it++)
+        std::cout << string_formater::formater("%5d",*it);
+
+    std::cout << "\n";
+
+    print(head->right);
+}
+
+void lexicographic::print() {
+    if (_size < 1)
+        throw std::overflow_error("tree is empty");
+
+    print(this->_head);
 }
 

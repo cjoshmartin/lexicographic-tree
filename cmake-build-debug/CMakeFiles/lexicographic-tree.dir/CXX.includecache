@@ -9,6 +9,12 @@
 /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.cpp
 lexicographic.h
 /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.h
+stdexcept
+-
+iostream
+-
+string_formater.h
+/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater.h
 
 /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.h
 node.h
@@ -32,5 +38,17 @@ lexicographic.h
 string
 -
 vector
+-
+
+/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater.cpp
+vector
+-
+stdarg.h
+-
+string_formater.h
+/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater.h
+
+/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater.h
+string
 -
 

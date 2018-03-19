@@ -25,6 +25,8 @@ public:
     void insertNode(node *&pNode, std::string basic_string, int i);
     node * searchNodes(std::string word, node * searchNode);
 
+    void print(node * head);
+    void print ();
 private:
     node * _head;
     size_t _size;

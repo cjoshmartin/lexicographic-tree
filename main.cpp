@@ -40,26 +40,26 @@ int main(void)
         getline(std::cin,inputStr);
 
         if(inputStr.compare("#") == 0 || inputStr.compare("##") == 0 )
-            quit = true;
+            quit = true; // this is how the program exists
         else if (inputStr.compare(" ") == 0)
         {
             // do nothing if you receive a blank space
         }
         else
-            paser(inputStr,lineNumber++,theTree);
+            paser(inputStr,lineNumber++,theTree); // sends the string off to be pasered
     }
-
+    theTree->print();
     return 0;
 }
 
 void paser(std::string inputStr, int lineNumber,lexicographic * theTree)
 {
-    std::istringstream input(inputStr);
-    std::string e;
+    std::istringstream input(inputStr); // brakes the input string into words by the spaces
+    std::string e; // where each word is stored
 
     while (!input.eof()) {
-        size_t split = 10;
-        input >> e;
+        size_t split = 10; // setting a default length for each word
+        input >> e; // next word in the input string
 
         // checking for punctuation marks other newline and spaces because istringstream will handle that for me
         // https://simple.wikipedia.org/wiki/Punctuation
@@ -69,7 +69,7 @@ void paser(std::string inputStr, int lineNumber,lexicographic * theTree)
         else if (e.find("...") != std::string::npos) // finds '.'
             split = e.find("...");
         else if (e.find(".") != std::string::npos) // finds '.'
-             split = e.find(".");
+            split = e.find(".");
         else if (e.find("!") != std::string::npos)
             split = e.find("!");
         else if (e.find("?") != std::string::npos)
@@ -85,12 +85,14 @@ void paser(std::string inputStr, int lineNumber,lexicographic * theTree)
         else if (e.find("-") != std::string::npos)
             split = e.find("-");
 
-        // checks if the spilter is bigger then 10
+        // checks if the spilter is bigger then 10, this will reduce it into range of [0,10)
         if( split > 10)
             split = 10;
 
-        std::transform(e.begin(), e.end(), e.begin(), ::tolower);
-        std::cout << "\n" << e.substr(0,split) << " "<< lineNumber <<  "\n";
-        theTree->insertNode(e.substr(0,split), lineNumber);
+        //TODO: check if the word starts with [a-z]
+
+        std::transform(e.begin(), e.end(), e.begin(), ::tolower); // normalizes the text to lowercase
+//        std::cout << "\n" << e.substr(0,split) << " "<< lineNumber <<  "\n";
+        theTree->insertNode(e.substr(0,split), lineNumber); // sends the nodes off to be created
     }
 }
