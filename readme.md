@@ -5,7 +5,6 @@
 In the root of the directory type:
 ```
 make
-
 ```
 
 ## Running the program 
@@ -14,10 +13,9 @@ after compiling type:
 
 ```
 ./TheWordTree.out
-
 ```
 
-##To run the program with a text file
+## To run the program with a text file
 
 ```
 cat [name of text file] | ./TheWordTree.out
