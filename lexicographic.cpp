@@ -13,52 +13,53 @@
 #include <iostream>
 #include "string_formater.h"
 
-lexicographic::lexicographic(): _size(0), _head(nullptr) {}
+lexicographic::lexicographic(): _size(0), _head(nullptr) {} // default constructor for this clas
 
 lexicographic::~lexicographic() {
 
 }
 
-size_t lexicographic::size() {
-    return this->_size;
-}
 
 void lexicographic::insertNode(std::string wordInserted, int lineNumber) {
 
-    if(this->_head == nullptr)
+    if(this->_head == nullptr) // checks if the tree is empty
     {
-        node * newHead = new node;
+        node * newHead = new node; // creates a new node
 
-        newHead->lineNumbers.push_back(lineNumber);
-        newHead->lexicon = wordInserted;
-
+        newHead->lineNumbers.push_back(lineNumber); // adds the line number to the new word
+        newHead->lexicon = wordInserted; // sets the word to the node
+//the tree is only one node, so we'll just make the left and right node null
         newHead->right = nullptr;
         newHead->left = nullptr;
 
+        // size of the tree has increased
         this->_size++;
 
+        // setting the head to the top of the tree
         this->_head = newHead;
     }
     else
     {
+        // else there are already nodes in the tree
 
+        // so lets search to see where this new node belongs
      node * searching = searchNodes(wordInserted,this->_head);
 
-        if(searching!=nullptr)
+        if(searching!=nullptr) // if we found one, that already exist in the tree. lets append a new line number
         {
             searching->lineNumbers.push_back(lineNumber);
         }
         else
-        {
+        { // else search where it fits in the tree
             insertNode(this->_head,wordInserted,lineNumber);
-            this->_size++;
+            this->_size++; // new node added
         }
     }
 }
 
 void lexicographic::insertNode(node *&pNode, std::string basic_string, int i) {
 
-    if(pNode == nullptr)
+    if(pNode == nullptr) // this if statemant is the same as the one above
     {
         node * newHead = new node;
         newHead->lineNumbers.push_back(i);
@@ -69,6 +70,7 @@ void lexicographic::insertNode(node *&pNode, std::string basic_string, int i) {
         pNode = newHead;
     }
     else
+        // how wee find where the node belongs
         insertNode(pNode->lexicon <= basic_string ? pNode->right : pNode->left, basic_string, i);
 }
 
@@ -77,41 +79,41 @@ node *lexicographic::searchNodes(std::string word, node *searchNode) {
     if(searchNode == nullptr)
     return nullptr;
 
-    if (searchNode->lexicon == word)
+    if (searchNode->lexicon == word) // checks if the node already exist in the tree
         return searchNode;
 
-    node * __left = searchNodes(word,searchNode->left);
-    node * __right = searchNodes(word, searchNode->right);
+    node * __left = searchNodes(word,searchNode->left); // searching the left side of the tree
+    node * __right = searchNodes(word, searchNode->right); // searching the right side of the tree
 
-    if (__left != nullptr)
+    if (__left != nullptr)// checks if the node already exist in the tree
         return __left;
 
-    if (__right != nullptr)
+    if (__right != nullptr)// checks if the node already exist in the tree
         return __right;
 
-    return nullptr;
+    return nullptr; // node couldn't find one like it
 }
 
 void lexicographic::print(node * head) {
     if ( head == nullptr)
         return;
 
-    print(head->left);
+    print(head->left); // moves the farest left it can first
 
-    std::vector<int>::iterator it;  // declare an iterator to a vector of strings
-    printf("\n%11s   ",head->lexicon.c_str());
+    std::vector<int>::iterator it;  // declare an iterator to a vector of int
+    printf("\n%11s   ",head->lexicon.c_str()); // prints the word
     for(it = head->lineNumbers.begin(); it != head->lineNumbers.end(); it++)
-        std::cout << string_formater::formater("%5d",*it);
+        std::cout << string_formater::formater("%5d",*it); // prints line number of the word
 
     std::cout << "\n";
 
-    print(head->right);
+    print(head->right); // then moves farest right it can
 }
 
 void lexicographic::print() {
-    if (_size < 1)
+    if (_size < 1) // checks if there is anything to print
         throw std::overflow_error("tree is empty");
 
-    print(this->_head);
+    print(this->_head); // calls the recessive version of print
 }
 

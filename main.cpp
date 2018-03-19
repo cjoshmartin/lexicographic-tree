@@ -37,7 +37,7 @@ int main(void)
 
     while (!quit)
     {
-        getline(std::cin,inputStr);
+        getline(std::cin,inputStr); // loads a line of text into the buffer
 
         if(inputStr.compare("#") == 0 || inputStr.compare("##") == 0 )
             quit = true; // this is how the program exists
@@ -64,35 +64,34 @@ void paser(std::string inputStr, int lineNumber,lexicographic * theTree)
         // checking for punctuation marks other newline and spaces because istringstream will handle that for me
         // https://simple.wikipedia.org/wiki/Punctuation
 
-        if ( e.find(",") != std::string::npos) //finds ','
+        if (e.find(",") != std::string::npos) //finds ','
             split = e.find(",");
         else if (e.find("...") != std::string::npos) // finds '.'
             split = e.find("...");
         else if (e.find(".") != std::string::npos) // finds '.'
             split = e.find(".");
-        else if (e.find("!") != std::string::npos)
+        else if (e.find("!") != std::string::npos) // finds  '!'
             split = e.find("!");
-        else if (e.find("?") != std::string::npos)
+        else if (e.find("?") != std::string::npos) // finds '?'
             split = e.find("?");
-        else if (e.find(":") != std::string::npos)
+        else if (e.find(":") != std::string::npos) // finds ':'
             split = e.find(":");
-        else if (e.find(";") != std::string::npos)
+        else if (e.find(";") != std::string::npos) // finds ';'
             split = e.find(";");
-        else if (e.find("---") != std::string::npos)
+        else if (e.find("---") != std::string::npos) // finds '---'
             split = e.find("---");
-        else if (e.find("--") != std::string::npos)
+        else if (e.find("--") != std::string::npos) // finds '--'
             split = e.find("--");
-        else if (e.find("-") != std::string::npos)
+        else if (e.find("-") != std::string::npos) // finds '-'
             split = e.find("-");
 
         // checks if the spilter is bigger then 10, this will reduce it into range of [0,10)
-        if( split > 10)
+        if (split > 10)
             split = 10;
 
-        //TODO: check if the word starts with [a-z]
-
-        std::transform(e.begin(), e.end(), e.begin(), ::tolower); // normalizes the text to lowercase
-//        std::cout << "\n" << e.substr(0,split) << " "<< lineNumber <<  "\n";
-        theTree->insertNode(e.substr(0,split), lineNumber); // sends the nodes off to be created
+        if (isalpha(e.c_str()[0])) { // checks if the first letter starts with [a-z]
+            std::transform(e.begin(), e.end(), e.begin(), ::tolower); // normalizes the text to lowercase
+            theTree->insertNode(e.substr(0, split), lineNumber); // sends the nodes off to be created
+        }
     }
 }
