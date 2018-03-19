@@ -1,0 +1,15 @@
+
+project (thewordtree){
+    exename = TheWordTree.out
+    specific (make) {
+        compile_flags += -std=c++11
+    }
+    Source_Files {
+    *.cpp
+    }
+    Header_Files {
+    *.h
+    }
+    Inline_Files {
+    }
+}
