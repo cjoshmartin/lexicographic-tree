@@ -43,7 +43,12 @@ void lexicographic::insertNode(std::string wordInserted, int lineNumber) {
 
         if(searching!=nullptr)
         {
-
+            this->_head->lineNumbers.push_back(lineNumber);
+        }
+        else
+        {
+            insert(this->_head,wordInserted,lineNumber);
+            this->_size++;
         }
     }
 }
