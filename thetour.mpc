@@ -12,6 +12,7 @@ project (thewordtree){
     Header_Files {
     lexicographic/*.h
     string_formater/*.h
+    node/node.h
     *.h
     }
     Inline_Files {

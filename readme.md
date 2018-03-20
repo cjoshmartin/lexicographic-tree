@@ -26,3 +26,8 @@ cat [name of text file] | ./TheWordTree.out
 ```
 cat input_files/text_input.txt | ./TheWordTree.out
 ```
+## Test file
+they are located in: `input_files` folder
+
+## My Binary Tree
+this is located in the `lexicographic` folder

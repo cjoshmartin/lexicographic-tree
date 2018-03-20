@@ -12,7 +12,7 @@
 #define LEXICOGRAPHIC_TREE_LEXICOGRAPHIC_H
 
 
-#include "../node.h"
+#include "../node/node.h"
 
 class lexicographic {
 public:
