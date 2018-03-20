@@ -13,6 +13,8 @@ stdexcept
 -
 iostream
 -
+fstream
+-
 string_formater.h
 /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater.h
 
@@ -23,13 +25,7 @@ node.h
 /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/main.cpp
 iostream
 -
-stdio.h
--
-string
--
 sstream
--
-algorithm
 -
 lexicographic.h
 /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.h

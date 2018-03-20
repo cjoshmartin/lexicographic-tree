@@ -81,66 +81,66 @@ CMakeFiles/lexicographic-tree.dir/main.cpp.o.provides: CMakeFiles/lexicographic-
 CMakeFiles/lexicographic-tree.dir/main.cpp.o.provides.build: CMakeFiles/lexicographic-tree.dir/main.cpp.o
 
 
-CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o: CMakeFiles/lexicographic-tree.dir/flags.make
-CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o: ../lexicographic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o -c /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.cpp
+CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o: CMakeFiles/lexicographic-tree.dir/flags.make
+CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o: ../lexicographic/lexicographic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o -c /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic/lexicographic.cpp
 
-CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.cpp > CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.i
+CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic/lexicographic.cpp > CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.i
 
-CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.cpp -o CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.s
+CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic/lexicographic.cpp -o CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.s
 
-CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o.requires:
+CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o.requires:
 
-.PHONY : CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o.requires
+.PHONY : CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o.requires
 
-CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o.provides: CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o.requires
-	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o.provides.build
-.PHONY : CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o.provides
+CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o.provides: CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o.provides.build
+.PHONY : CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o.provides
 
-CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o.provides.build: CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o
+CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o.provides.build: CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o
 
 
-CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o: CMakeFiles/lexicographic-tree.dir/flags.make
-CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o: ../string_formater.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o -c /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater.cpp
+CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o: CMakeFiles/lexicographic-tree.dir/flags.make
+CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o: ../string_formater/string_formater.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o -c /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater/string_formater.cpp
 
-CMakeFiles/lexicographic-tree.dir/string_formater.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lexicographic-tree.dir/string_formater.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater.cpp > CMakeFiles/lexicographic-tree.dir/string_formater.cpp.i
+CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater/string_formater.cpp > CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.i
 
-CMakeFiles/lexicographic-tree.dir/string_formater.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lexicographic-tree.dir/string_formater.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater.cpp -o CMakeFiles/lexicographic-tree.dir/string_formater.cpp.s
+CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater/string_formater.cpp -o CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.s
 
-CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o.requires:
+CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o.requires:
 
-.PHONY : CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o.requires
+.PHONY : CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o.requires
 
-CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o.provides: CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o.requires
-	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o.provides.build
-.PHONY : CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o.provides
+CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o.provides: CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o.provides.build
+.PHONY : CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o.provides
 
-CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o.provides.build: CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o
+CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o.provides.build: CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o
 
 
 # Object files for target lexicographic-tree
 lexicographic__tree_OBJECTS = \
 "CMakeFiles/lexicographic-tree.dir/main.cpp.o" \
-"CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o" \
-"CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o"
+"CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o" \
+"CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o"
 
 # External object files for target lexicographic-tree
 lexicographic__tree_EXTERNAL_OBJECTS =
 
 lexicographic-tree: CMakeFiles/lexicographic-tree.dir/main.cpp.o
-lexicographic-tree: CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o
-lexicographic-tree: CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o
+lexicographic-tree: CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o
+lexicographic-tree: CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o
 lexicographic-tree: CMakeFiles/lexicographic-tree.dir/build.make
 lexicographic-tree: CMakeFiles/lexicographic-tree.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable lexicographic-tree"
@@ -152,8 +152,8 @@ CMakeFiles/lexicographic-tree.dir/build: lexicographic-tree
 .PHONY : CMakeFiles/lexicographic-tree.dir/build
 
 CMakeFiles/lexicographic-tree.dir/requires: CMakeFiles/lexicographic-tree.dir/main.cpp.o.requires
-CMakeFiles/lexicographic-tree.dir/requires: CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o.requires
-CMakeFiles/lexicographic-tree.dir/requires: CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o.requires
+CMakeFiles/lexicographic-tree.dir/requires: CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o.requires
+CMakeFiles/lexicographic-tree.dir/requires: CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o.requires
 
 .PHONY : CMakeFiles/lexicographic-tree.dir/requires
 

@@ -24,5 +24,5 @@ cat [name of text file] | ./TheWordTree.out
 **Example**: ( there are two text files included, another_text_input.txt and text_input.txt) 
 
 ```
-cat text_input.txt | ./TheWordTree.out
+cat input_files/text_input.txt | ./TheWordTree.out
 ```

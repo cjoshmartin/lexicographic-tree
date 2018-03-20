@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lexicographic-tree.dir/main.cpp.o"
-  "CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o"
-  "CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o"
+  "CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o"
+  "CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o"
   "lexicographic-tree.pdb"
   "lexicographic-tree"
 )

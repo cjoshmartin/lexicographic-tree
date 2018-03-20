@@ -11,9 +11,10 @@
 #include "lexicographic.h"
 #include <stdexcept>
 #include <iostream>
-#include "string_formater.h"
+#include <fstream>
+#include "../string_formater/string_formater.h"
 
-lexicographic::lexicographic(): _size(0), _head(nullptr) {} // default constructor for this clas
+lexicographic::lexicographic(): _size(0), _head(nullptr), _output("") {} // default constructor for this clas
 
 lexicographic::~lexicographic() {
 
@@ -94,26 +95,39 @@ node *lexicographic::searchNodes(std::string word, node *searchNode) {
     return nullptr; // node couldn't find one like it
 }
 
-void lexicographic::print(node * head) {
+void lexicographic::buildText(node *head) {
     if ( head == nullptr)
         return;
 
-    print(head->left); // moves the farest left it can first
+    buildText(head->left); // moves the farest left it can first
 
     std::vector<int>::iterator it;  // declare an iterator to a vector of int
-    printf("\n%11s   ",head->lexicon.c_str()); // prints the word
+    _output += string_formater::formater("\n%11s   ",head->lexicon.c_str()); // prints the word
     for(it = head->lineNumbers.begin(); it != head->lineNumbers.end(); it++)
-        std::cout << string_formater::formater("%5d",*it); // prints line number of the word
+        _output += string_formater::formater("%5d",*it); // prints line number of the word
 
-    std::cout << "\n";
+    _output +="\n";
 
-    print(head->right); // then moves farest right it can
+    buildText(head->right); // then moves farest right it can
 }
 
-void lexicographic::print() {
-    if (_size < 1) // checks if there is anything to print
+void lexicographic::buildText() {
+    if (_size < 1) // checks if there is anything to buildText
         throw std::overflow_error("tree is empty");
 
-    print(this->_head); // calls the recessive version of print
+    buildText(this->_head); // calls the recessive version of buildText
+}
+
+void lexicographic::outputToScreen() {
+
+    std::cout << _output;
+}
+
+void lexicographic::outputToFile(std::string file) {
+    std::ofstream myfile;
+    myfile.open (file);
+    myfile << _output;
+    myfile.close();
+
 }
 

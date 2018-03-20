@@ -12,7 +12,7 @@
 #define LEXICOGRAPHIC_TREE_LEXICOGRAPHIC_H
 
 
-#include "node.h"
+#include "../node.h"
 
 class lexicographic {
 public:
@@ -23,12 +23,15 @@ public:
     void insertNode(node *&pNode, std::string basic_string, int i);
 
     node * searchNodes(std::string word, node * searchNode);
-    void print ();
+    void buildText();
+    void outputToScreen();
+    void outputToFile(std::string file);
 
 private:
     node * _head;
     size_t _size;
-    void print(node * head);
+    std::string _output;
+    void buildText(node *head);
 
 };
 

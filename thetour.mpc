@@ -5,9 +5,13 @@ project (thewordtree){
         compile_flags += -std=c++11
     }
     Source_Files {
+    lexicographic/*.cpp
+    string_formater/*.cpp
     *.cpp
     }
     Header_Files {
+    lexicographic/*.h
+    string_formater/*.h
     *.h
     }
     Inline_Files {

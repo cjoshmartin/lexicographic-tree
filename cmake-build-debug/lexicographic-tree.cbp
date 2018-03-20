@@ -82,10 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.cpp">
+		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic/lexicographic.cpp">
 			<Option target="lexicographic-tree"/>
 		</Unit>
-		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic.h">
+		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/lexicographic/lexicographic.h">
 			<Option target="lexicographic-tree"/>
 		</Unit>
 		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/main.cpp">
@@ -94,10 +94,10 @@
 		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/node.h">
 			<Option target="lexicographic-tree"/>
 		</Unit>
-		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater.cpp">
+		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater/string_formater.cpp">
 			<Option target="lexicographic-tree"/>
 		</Unit>
-		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater.h">
+		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/string_formater/string_formater.h">
 			<Option target="lexicographic-tree"/>
 		</Unit>
 		<Unit filename="/Users/josh/Documents/School/Junior/spring/csci362/projects/lexicographic-tree/CMakeLists.txt">

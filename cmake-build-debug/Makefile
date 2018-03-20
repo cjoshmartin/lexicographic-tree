@@ -123,32 +123,32 @@ lexicographic-tree/fast:
 	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/build
 .PHONY : lexicographic-tree/fast
 
-lexicographic.o: lexicographic.cpp.o
+lexicographic/lexicographic.o: lexicographic/lexicographic.cpp.o
 
-.PHONY : lexicographic.o
+.PHONY : lexicographic/lexicographic.o
 
 # target to build an object file
-lexicographic.cpp.o:
-	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.o
-.PHONY : lexicographic.cpp.o
+lexicographic/lexicographic.cpp.o:
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.o
+.PHONY : lexicographic/lexicographic.cpp.o
 
-lexicographic.i: lexicographic.cpp.i
+lexicographic/lexicographic.i: lexicographic/lexicographic.cpp.i
 
-.PHONY : lexicographic.i
+.PHONY : lexicographic/lexicographic.i
 
 # target to preprocess a source file
-lexicographic.cpp.i:
-	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.i
-.PHONY : lexicographic.cpp.i
+lexicographic/lexicographic.cpp.i:
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.i
+.PHONY : lexicographic/lexicographic.cpp.i
 
-lexicographic.s: lexicographic.cpp.s
+lexicographic/lexicographic.s: lexicographic/lexicographic.cpp.s
 
-.PHONY : lexicographic.s
+.PHONY : lexicographic/lexicographic.s
 
 # target to generate assembly for a file
-lexicographic.cpp.s:
-	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/lexicographic.cpp.s
-.PHONY : lexicographic.cpp.s
+lexicographic/lexicographic.cpp.s:
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/lexicographic/lexicographic.cpp.s
+.PHONY : lexicographic/lexicographic.cpp.s
 
 main.o: main.cpp.o
 
@@ -177,32 +177,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-string_formater.o: string_formater.cpp.o
+string_formater/string_formater.o: string_formater/string_formater.cpp.o
 
-.PHONY : string_formater.o
+.PHONY : string_formater/string_formater.o
 
 # target to build an object file
-string_formater.cpp.o:
-	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/string_formater.cpp.o
-.PHONY : string_formater.cpp.o
+string_formater/string_formater.cpp.o:
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.o
+.PHONY : string_formater/string_formater.cpp.o
 
-string_formater.i: string_formater.cpp.i
+string_formater/string_formater.i: string_formater/string_formater.cpp.i
 
-.PHONY : string_formater.i
+.PHONY : string_formater/string_formater.i
 
 # target to preprocess a source file
-string_formater.cpp.i:
-	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/string_formater.cpp.i
-.PHONY : string_formater.cpp.i
+string_formater/string_formater.cpp.i:
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.i
+.PHONY : string_formater/string_formater.cpp.i
 
-string_formater.s: string_formater.cpp.s
+string_formater/string_formater.s: string_formater/string_formater.cpp.s
 
-.PHONY : string_formater.s
+.PHONY : string_formater/string_formater.s
 
 # target to generate assembly for a file
-string_formater.cpp.s:
-	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/string_formater.cpp.s
-.PHONY : string_formater.cpp.s
+string_formater/string_formater.cpp.s:
+	$(MAKE) -f CMakeFiles/lexicographic-tree.dir/build.make CMakeFiles/lexicographic-tree.dir/string_formater/string_formater.cpp.s
+.PHONY : string_formater/string_formater.cpp.s
 
 # Help Target
 help:
@@ -213,15 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lexicographic-tree"
-	@echo "... lexicographic.o"
-	@echo "... lexicographic.i"
-	@echo "... lexicographic.s"
+	@echo "... lexicographic/lexicographic.o"
+	@echo "... lexicographic/lexicographic.i"
+	@echo "... lexicographic/lexicographic.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... string_formater.o"
-	@echo "... string_formater.i"
-	@echo "... string_formater.s"
+	@echo "... string_formater/string_formater.o"
+	@echo "... string_formater/string_formater.i"
+	@echo "... string_formater/string_formater.s"
 .PHONY : help
 
 

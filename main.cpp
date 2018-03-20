@@ -17,12 +17,8 @@ knowledge is our destiny.
  */
 
 #include <iostream>
-#include <stdio.h>
-#include <string>
-
 #include <sstream>
-#include <algorithm>
-#include "lexicographic.h"
+#include "lexicographic/lexicographic.h"
 
 void paser(std::string, int, lexicographic *);
 
@@ -41,14 +37,20 @@ int main(void)
 
         if(inputStr.compare("#") == 0 || inputStr.compare("##") == 0 )
             quit = true; // this is how the program exists
+
         else if (inputStr.compare(" ") == 0)
         {
             // do nothing if you receive a blank space
         }
+
         else
             paser(inputStr,lineNumber++,theTree); // sends the string off to be pasered
     }
-    theTree->print();
+
+    theTree->buildText();
+    theTree->outputToScreen();
+    theTree->outputToFile("OUTPUTFILE.TXT");
+
     return 0;
 }
 
