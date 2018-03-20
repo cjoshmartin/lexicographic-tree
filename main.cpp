@@ -17,7 +17,11 @@ knowledge is our destiny.
  */
 
 #include <iostream>
+#include <stdio.h>
+#include <string>
+
 #include <sstream>
+#include <algorithm>
 #include "lexicographic/lexicographic.h"
 
 void paser(std::string, int, lexicographic *);
