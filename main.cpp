@@ -51,9 +51,9 @@ int main(void)
             paser(inputStr,lineNumber++,theTree); // sends the string off to be pasered
     }
 
-    theTree->buildText();
-    theTree->outputToScreen();
-    theTree->outputToFile("OUTPUTFILE.TXT");
+    theTree->buildText();// contructs the tree into a string
+    theTree->outputToScreen(); // prints string above to screeen
+    theTree->outputToFile("OUTPUTFILE.TXT"); // saves the same string to a text file
 
     return 0;
 }

@@ -119,11 +119,12 @@ void lexicographic::buildText() {
 }
 
 void lexicographic::outputToScreen() {
-
+    // just echos output the the screen, when asked nicely
     std::cout << _output;
 }
 
 void lexicographic::outputToFile(std::string file) {
+    // write out to a file
     std::ofstream myfile;
     myfile.open (file);
     myfile << _output;

@@ -15,8 +15,8 @@
 #include <vector>
 
 struct node{
-    std::string lexicon;
-    std::vector<int> lineNumbers;
-    node *left,*right;
+    std::string lexicon; // where each word is stored
+    std::vector<int> lineNumbers; // where each word appears in the text
+    node *left,*right; // the next words in the list
 };
 #endif //LEXICOGRAPHIC_TREE_NODE_H

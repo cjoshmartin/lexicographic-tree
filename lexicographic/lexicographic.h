@@ -23,7 +23,7 @@ public:
     void insertNode(node *&pNode, std::string basic_string, int i);
 
     node * searchNodes(std::string word, node * searchNode);
-    void buildText();
+    void buildText(); // what the user calls
     void outputToScreen();
     void outputToFile(std::string file);
 
@@ -31,7 +31,7 @@ private:
     node * _head;
     size_t _size;
     std::string _output;
-    void buildText(node *head);
+    void buildText(node *head); // recersive verison
 
 };
 
